@@ -1,0 +1,30 @@
+{
+  "name": "contactlistapp",
+  "version": "1.0.0",
+  "description": "contact list with express,angular and etc .",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LordK1/ChatterApplication"
+  },
+  "keywords": [
+    "express",
+    "angularjs",
+    "node"
+  ],
+  "author": "LordK1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordK1/ChatterApplication/issues"
+  },
+  "homepage": "https://github.com/LordK1/ChatterApplication",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.12.4",
+    "mongojs": "^1.0.1"
+  }
+}
