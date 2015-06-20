@@ -32,6 +32,38 @@ app.post('/contactlist', function (request, response) {
 
 });
 
+app.delete('/contactlist/:id', function (request, response) {
+    var id = request.params.id;
+    console.log('ID : ' + id);
+    db.contactlist.remove({_id: mongojs.ObjectId(id)}, function (err, doc) {
+        response.json(doc);
+    });
+});
+
+app.get('/contactlist/:id', function (request, response) {
+    var id = request.params.id;
+    console.log('Update contactID : ' + id);
+    db.contactlist.findOne({_id: mongojs.ObjectId(id)}, function (err, doc) {
+        response.json(doc);
+    });
+});
+
+
+app.put('/contactlist/:id', function (request, response) {
+    var id = request.params.id;
+    console.log('put contact id : ', id, ' name : ' + request.body.name);
+
+    db.contactlist.findAndModify({
+        query: {
+            _id: mongojs.ObjectId(id),
+            update: {$set: {name: request.body.name, email: request.body.email, number: request.body.number}},
+            new: true
+        }
+    }, function (err, doc) {
+        response.json(doc);
+    });
+});
+
 var server = app.listen(3000, function () {
     var host = server.address().address;
     var port = server.address().port;
