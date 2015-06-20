@@ -11,9 +11,9 @@ var bodyParser = require('body-parser');
 app.set('port', (process.env.PORT || 3000));
 
 
-app.get('/', function (request, response) {
+/*app.get('/', function (request, response) {
     response.send('Hello World from js .')
-});
+});*/
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());

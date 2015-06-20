@@ -10,8 +10,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/LordK1/contato-list.git",
-    "type":"heroku",
-    "url":"https://git.heroku.com/contato-list.git"
+    "type": "heroku",
+    "url": "https://git.heroku.com/contato-list.git"
   },
   "keywords": [
     "express",
@@ -21,9 +21,9 @@
   "author": "LordK1",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LordK1/ChatterApplication/issues"
+    "url": "https://github.com/LordK1/contato-list/issues"
   },
-  "homepage": "https://github.com/LordK1/ChatterApplication",
+  "homepage": "https://contato-list.herokuapp.com/",
   "dependencies": {
     "body-parser": "^1.13.1",
     "express": "^4.12.4",
