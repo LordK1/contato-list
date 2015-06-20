@@ -1,0 +1,12 @@
+{
+  "name": "contato-list",
+  "description": "A REST api with Node.Js application via using AngularJS other frameworks",
+  "repository": "https://git.heroku.com/contato-list.git",
+  "log": "http://contato-list.herokuapp.com/fac_icon.svg",
+  "keyword": [
+    "node",
+    "angularjs",
+    "express",
+    "static"
+  ]
+}

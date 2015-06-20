@@ -9,7 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LordK1/ChatterApplication"
+    "url": "https://github.com/LordK1/contato-list.git",
+    "type":"heroku",
+    "url":"https://git.heroku.com/contato-list.git"
   },
   "keywords": [
     "express",
