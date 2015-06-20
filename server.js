@@ -8,9 +8,12 @@ var db = mongojs('contactlist', ['contactlist']);
 var bodyParser = require('body-parser');
 
 
-/*app.get('/', function (request, response) {
- response.send('Hello World from js .')
- });*/
+app.set('port', (process.env.PORT || 3000));
+
+
+app.get('/', function (request, response) {
+    response.send('Hello World from js .')
+});
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -64,7 +67,7 @@ app.put('/contactlist/:id', function (request, response) {
     });
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(app.get('port'), function () {
     var host = server.address().address;
     var port = server.address().port;
 
